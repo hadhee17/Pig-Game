@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: beige;
+}
+
+main {
+  position: relative;
+  background-color: bisque;
+  width: 700px;
+  height: 500px;
+  margin: 0 auto;
+  top: 100px;
+}
+
+.hold-score-0 {
+  padding: 20px;
+  margin-left: 25px;
+  font-size: 50px;
+}
+
+.current-score-box-1 {
+  text-align: center;
+  padding: 10px;
+  margin-left: 20px;
+  font-size: 25px;
+  background-color: rgb(148, 171, 171);
+  width: 100px;
+  color: white;
+}
+
+.dice {
+  padding: 20px;
+}
+
+.hold-score-1 {
+  padding: 20px;
+  margin-left: 25px;
+  font-size: 50px;
+}
+
+.current-score-box-2 {
+  padding: 10px;
+  margin-left: 20px;
+  font-size: 25px;
+  background-color: rgb(148, 171, 171);
+  width: 100px;
+  color: white;
+}
+
+.current-score-1 {
+  margin-left: 20px;
+}
+
+.new-game {
+  padding: 10px;
+  font-weight: bold;
+  background-color: brown;
+}
+
+.roll-dice {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.hold {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.buttons {
+  position: absolute;
+  padding-top: 20px;
+  left: 180px;
+  top: 350px;
+}
+
+.player-2 {
+  position: absolute;
+  left: 500px;
+  top: 0px;
+}
+
+.dice {
+  position: absolute;
+  bottom: 200px;
+  left: 250px;
+}
+
+.hidden {
+  display: none;
+}
+
+.winner {
+  position: absolute;
+  text-align: center;
+  left: 100px;
+  background-color: white;
+  width: 400px;
+  padding: 20px;
+  height: 100px;
+  font-size: 50px;
+  font-weight: bold;
+}
