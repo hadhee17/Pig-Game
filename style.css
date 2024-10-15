@@ -89,3 +89,9 @@ main {
   position: relative;
   left: 27px;
 }
+
+h3 {
+  position: absolute;
+  font-size: 25px;
+  left: 500px;
+}
