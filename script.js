@@ -15,7 +15,6 @@ const currentScoreHolder2 = document.querySelector(".current-score-1");
 const newGameButton = document.querySelector(".new-game");
 
 const diceImage = document.querySelector(".dice");
-const winnerDisplay = document.querySelector(".winner");
 
 let randomNumber;
 let currentScored = 0;
@@ -26,12 +25,11 @@ const switchPlayer = function () {
   holded[activePlayer] += currentScored;
   console.log(holded);
 
-  if (holded[activePlayer] >= 50) {
-    document.querySelector(".winner").textContent = `Player ${
-      activePlayer + 1
-    } is the winner`;
-
-    winnerDisplay.classList.remove("hidden");
+  if (holded[activePlayer] >= 10) {
+    document.querySelector(`.Player-${activePlayer}`).style.backgroundColor =
+      "rgb(142,122,7)";
+    rollDiceBtn.disabled = true;
+    holdButton.disabled = true;
   }
   document.querySelector(`.hold-score-${activePlayer}`).textContent =
     holded[activePlayer];
@@ -73,6 +71,9 @@ newGameBtn.addEventListener("click", function () {
   currentScoreHolder2.textContent = 0;
   scoreHolder1.textContent = 0;
   scoreHolder2.textContent = 0;
+  rollDiceBtn.disabled = false;
+  holdButton.disabled = false;
   diceImage.classList.add("hidden");
-  winnerDisplay.classList.add("hidden");
+  document.querySelector(`.Player-${activePlayer}`).style.backgroundColor =
+    "rgb(255,215,0)";
 });
